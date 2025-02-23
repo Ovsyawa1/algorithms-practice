@@ -6,12 +6,12 @@ def binary_search(arr: list, item): # объявление функции
     high = len(arr)
     
     while low <= high:
-        mid = (high + low) // 2
-        guess = arr[mid]
-        if guess < item:
-            low = mid + 1
-        elif guess > item:
-            high = mid - 1
+        mid = (high + low) // 2 # центр промежутка от low до high
+        guess = arr[mid] # предполагаемое число
+        if guess < item: # предполагаемое число меньше -> берем больше ->
+            low = mid + 1 # -> смещаем нижнюю границу
+        elif guess > item: # предполагаемое число больше -> берем меньше ->
+            high = mid - 1 # -> смещаем верхнюю границу
         else:
             return mid  
     return None
