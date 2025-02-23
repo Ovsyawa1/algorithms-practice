@@ -18,14 +18,17 @@ def binary_search(arr: list, item): # объявление функции
 
 # объявление переменных #
 
-my_arr = [] # объявление массива
 n = 10 # длина массива
 req_numb = 10 # нужное для поиска число
-  
-for _ in range(n): # создание массива из n символов рандомными int'ами
-    my_arr.append(random.randint(1, 100))
 
-my_arr.sort() # отсортировать массив
+def create_sorted_list(n: int) -> list:
+    my_arr = [] # объявление массива
+    for _ in range(n): # создание массива из n символов рандомными int'ами
+        my_arr.append(random.randint(1, 100))
+    my_arr.sort()
+    return my_arr
+
+my_arr = create_sorted_list(n=n) # отсортировать массив
 
 print(my_arr)
 print(binary_search(my_arr, req_numb))
