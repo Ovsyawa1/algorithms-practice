@@ -1,3 +1,5 @@
+
+## Сортировка выбором ##
 def find_smallest(arr: list):
     smallest = arr[0]
     smallest_index = 0
@@ -20,3 +22,15 @@ my_arr = [1, 8, -10, 26, 15, 100, -1000, 90, 66, 125]
 sorted_arr = selection_sort(my_arr)
 
 print(sorted_arr)
+
+## Алгоритм быстрой сортировки
+def quick_sort(my_array: list):
+    if len(my_array) < 2:
+        return my_array
+    else:
+        pivot = my_array[0]
+        less = [i for i in my_array[1:] if i <= pivot]
+        greater = [i for i in my_array[1:] if i > pivot]
+        return quick_sort(less) + [pivot] + quick_sort(greater)
+
+print(quick_sort([10, 7, 24, 89, 32, 7]))
