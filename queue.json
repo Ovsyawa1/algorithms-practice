@@ -1,0 +1,18 @@
+{
+    "You": [
+        "Alice",
+        "Bob",
+        "Clair"
+    ],
+    "Bob": [
+        "Anubis",
+        "Peggy"
+    ],
+    "Alice": [
+        "Peggy"
+    ],
+    "Clair": [
+        "Tom",
+        "Jonny"
+    ]
+}
