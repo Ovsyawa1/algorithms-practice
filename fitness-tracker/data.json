@@ -1,0 +1,26 @@
+{
+    "data_package_1": {
+        "time": "12:13:20",
+        "steps": 10000
+    },
+
+    "data_package_2": {
+        "time": "22:43:11",
+        "steps": 14000
+    },
+
+    "data_package_3": {
+        "time": "28:43:11",
+        "steps": 14000
+    },
+
+    "data_package_4": {
+        "time": "",
+        "steps": 14000
+    },
+
+    
+    "data_package_5": {
+        "time": "22:43:11"
+    }
+}

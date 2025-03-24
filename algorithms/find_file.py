@@ -2,7 +2,8 @@ from os import listdir
 from os.path import isfile, join
 from collections import deque
 
-## Применение поиска в ширину при помощи очереди (FIFO - первый вошел, первым вышел) ##
+
+# Применение поиска в ширину при помощи очереди (FIFO - первый вошел, первым вышел) ##
 
 def printnames(start_dir):
     # Инициализация переменных #
